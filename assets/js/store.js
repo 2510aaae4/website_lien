@@ -278,6 +278,9 @@ const SEED_ARTICLES = [
 
 const STORE_KEY = "lien_articles_v1";
 
+// 即使尚未有文章，也要顯示在分類選單中的額外分類
+const EXTRA_CATEGORIES = ["生活系列"];
+
 const Store = {
   userArticles(){
     try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || []; }
@@ -301,6 +304,6 @@ const Store = {
     localStorage.setItem(STORE_KEY, JSON.stringify(arr));
   },
   categories(){
-    return [...new Set(this.all().map(a=>a.category))];
+    return [...new Set([...this.all().map(a=>a.category), ...EXTRA_CATEGORIES])];
   }
 };

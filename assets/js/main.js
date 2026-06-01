@@ -102,7 +102,7 @@
     }).join("");
     host.innerHTML = `
       <header class="article-head wrap">
-        <a class="read" href="articles.html">← 衛教文章</a>
+        <a class="read" href="articles.html">← 健康專欄</a>
         <div class="meta"><span class="tag">${esc(a.category)}</span><span>${fmtDate(a.date)}</span><span>· 連思涵 醫師</span></div>
         <h1>${esc(a.title)}</h1>
       </header>
