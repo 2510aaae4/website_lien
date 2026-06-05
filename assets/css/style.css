@@ -227,6 +227,9 @@ h1,h2,h3{line-height:1.18;font-weight:700;letter-spacing:-.01em}
 .foot h4{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px}
 .foot a{display:block;padding:5px 0;color:var(--ink-soft);transition:color .2s}
 .foot a:hover{color:var(--clay)}
+.foot .line-add{margin-top:8px}
+.foot .line-add img{height:36px;width:auto;transition:transform .25s}
+.foot .line-add:hover img{transform:translateY(-2px)}
 .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
   padding-top:24px;border-top:1px solid var(--line);font-size:.84rem;color:var(--ink-faint)}
 
