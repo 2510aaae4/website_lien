@@ -116,6 +116,8 @@ h1,h2,h3{line-height:1.18;font-weight:700;letter-spacing:-.01em}
 .btn-primary:hover{transform:translateY(-2px);background:#684C66}
 .btn-ghost{border:1.5px solid var(--line-strong);color:var(--ink)}
 .btn-ghost:hover{border-color:var(--clay);color:var(--clay)}
+/* keep primary-button text white inside the nav (overrides .nav a color) */
+.nav a.btn-primary{color:#fff}
 .nav-toggle{display:none;font-size:1.5rem;color:var(--ink)}
 
 /* ---------- hero ---------- */
